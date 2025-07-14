@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página con Chatbot</title>
+  </head>
+<body>
+  <h1>Bienvenido a mi sitio web</h1>
+  <p>Aquí puedes encontrar información importante.</p>
+
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  <df-messenger
+    project-id="proyecto-chatbots-463805"
+    agent-id="dcef942b-5cef-4cd4-aff5-d580bd636988"
+    language-code="es"
+    max-query-length="-1">
+    <df-messenger-chat-bubble
+      chat-title="Soporte‐Técnico">
+    </df-messenger-chat-bubble>
+  </df-messenger>
+  <style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      --df-messenger-font-color: #000;
+      --df-messenger-font-family: Google Sans;
+      --df-messenger-chat-background: #f3f6fc;
+      --df-messenger-message-user-background: #d3e3fd;
+      --df-messenger-message-bot-background: #fff;
+      bottom: 16px;
+      right: 16px;
+    }
+  </style>
+
+  </body>
+</html>
